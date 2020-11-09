@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "products"
+    "name": "products",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,14 +11,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "richtext"
-    },
-    "quantity": {
-      "type": "integer"
     },
     "image": {
       "model": "file",
@@ -29,6 +24,18 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "speciality": {
+      "type": "string"
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }
